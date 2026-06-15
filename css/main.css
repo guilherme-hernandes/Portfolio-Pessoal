@@ -1,75 +1,97 @@
-* {
-    margin: 0;
-    padding: 0;
+:root{
+    --color-primary: #2e8196;
+    --color-bg: #ffffff;
+    --color-text: #1f2933;
+    --space: 1rem;
+    --container-max: 1100px;
 }
 
+/*
+  Arquivo: css/main.css
+  Finalidade: Estilizar o portfólio pessoal
+  Notas:
+    - Definir variáveis de tema
+    - Normalizar box-sizing
+    - Definir tipografia, layout e responsividade
+    - Estilizar cabeçalho, seção de projetos e rodapé
+    - Definir estilos de foco para acessibilidade
+*/
+
+*{box-sizing:border-box}
+
+html,body{height:100%}
+
+/* Definir tipografia e layout base */
 body {
-    font-family: system-ui, -apple-system, sans-serif;
-    font-size: 100%;
-    margin: 1.5rem;
-    line-height: 2rem;
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    font-size: 16px;
+    color: var(--color-text);
+    background: var(--color-bg);
+    margin: 0;
+    padding: 1.5rem;
+    line-height: 1.6;
 }
 
-header, main, footer {
-    max-width: 1100px;
-    margin: 2rem auto;
+/* Definir container central */
+.container{max-width:var(--container-max);margin:0 auto;padding:0 1rem}
+
+/* Definir espaçamento das principais regiões */
+header, main, footer { max-width:var(--container-max); margin:2rem auto; }
+
+/* Estilizar cabeçalho */
+.header-top{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+h1{color:var(--color-primary);font-size:1.5rem}
+
+nav ul{list-style:none;display:flex;gap:1rem;padding:0;margin:0}
+nav a{color:var(--color-primary);text-decoration:none;padding:.25rem .5rem;border-radius:6px}
+nav a:hover,nav a:focus{background:rgba(46,129,150,.08);outline:none}
+
+/* Estilizar figura principal */
+.hero{display:flex;justify-content:center;margin:1rem 0}
+#imgPrincipal{height:200px;width:200px;object-fit:cover;border:3px solid var(--color-primary);border-radius:18%}
+
+/* Definir lead e elementos de suporte */
+.lead{color:#334155;margin:0.5rem 0}
+
+/* Definir utilitário para texto escondido (acessibilidade) */
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+h2, section > p{margin-bottom:1rem}
+h2{color:var(--color-primary);font-size:1.25rem}
+
+/* Estilizar seção de projetos */
+#projetos{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;align-items:start}
+#projetos h2{grid-column:1/-1}
+.itemProjetos{background:#f8fafc;border-radius:8px;padding:1rem;text-align:center;box-shadow:0 1px 4px rgba(31,41,51,.04)}
+.itemProjetos h3{margin-bottom:.5rem}
+.itemProjetos img{max-width:100%;height:auto;border-radius:6px}
+.itemProjetos a{display:inline-block;margin-top:.5rem;color:var(--color-primary)}
+
+/* Estilizar link de pular conteúdo */
+.skip-link{position:absolute;left:1rem;top:1rem;background:var(--color-primary);color:#fff;padding:.5rem .75rem;border-radius:4px;transform:translateY(-140%);transition:transform .18s ease-in-out;z-index:1000}
+.skip-link:focus{transform:translateY(0)}
+
+/* Estilizar rodapé */
+footer{text-align:center;color:#6b7280;font-size:.95rem}
+
+/* Definir estilos de foco para acessibilidade */
+a:focus, button:focus, input:focus{outline:3px solid rgba(46,129,150,.2);outline-offset:2px}
+
+/* Definir responsividade */
+@media (max-width:900px){
+    .header-top{flex-direction:column;align-items:flex-start}
+    #projetos{grid-template-columns:1fr}
 }
 
-header, footer {
-    text-align: center;
+@media (max-width:600px){
+    /* Ajustar espaçamentos para telas pequenas */
+    body{padding:.75rem;font-size:18px}
+    #imgPrincipal{height:140px;width:140px}
+    nav ul{gap:.5rem;flex-wrap:wrap}
 }
 
-h2, section > p {
-    margin-bottom: 1.5rem;
-}
+/* Melhorar visibilidade do foco apenas para navegadores que suportam :focus-visible */
+:where(a,button,input):focus-visible{outline:3px solid rgba(46,129,150,.28);outline-offset:2px}
 
-h1, h2, a {
-    color: #2e8196;
-}
-
-a {
-    font-weight: bold;
-}
-
-#imgPrincipal {
-    height: 200px;
-    width: 200px;
-}
-
-#projetos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-}
-
-#projetos h2 {
-    grid-column: 1 / -1;
-}
-
-.itemProjetos {
-    text-align: center;
-}
-
-.itemProjetos img {
-    max-width: 100%;
-    height: auto;
-}
-
-header img {
-    border: 3px solid #2e8196;
-    border-radius: 10% 50% 10% 50%;
-}
-
-@media screen and (max-width: 600px) {
-    body {
-        font-size: 175%;
-    }
-
-    #projetos img {
-        display: none;
-    }
-
-    #projetos {
-        grid-template-columns: 1fr;
-    }
-}
+/* Pequena utilidade */
+.age{font-weight:600}

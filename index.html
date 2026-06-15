@@ -1,65 +1,112 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+<!--
+        Arquivo: index.html
+        Finalidade: Portfólio pessoal
+        Notas: 
+            - Descrever propósito do site e informações de contato
+            - Incluir navegação acessível (aria-label)
+            - Organizar seções: Resumo Profissional, Projetos, Contato
+            - Atualizar o ano automaticamente via script
+-->
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio pessoal — projetos e resumo profissional de [Nome Completo].">
+    <link rel="icon" href="https://placehold.co/32x32" type="image/png">
     <link rel="stylesheet" href="css/main.css">
     <title>[Nome & Sobrenome] | Portfólio Pessoal</title>
 </head>
 
 <body>
+    <!-- Adicionar link de pular conteúdo para acessibilidade -->
+    <a class="skip-link" href="#main">Pular para o conteúdo</a>
+    <!-- Cabeçalho: Exibir nome, foto e links de navegação -->
     <header>
-        <h1>[Nome Completo]</h1>
-        <img src="https://placehold.co/200x200" alt="[Nome Completo]" id="imgPrincipal">
-        <p>[Biografia] | [Idade]</p>
-        <p><a href="#">WhatsApp</a></p>
+        <div class="container header-top">
+            <h1>[Nome Completo]</h1>
+            <nav aria-label="Navegação principal">
+                <ul>
+                    <li><a href="#resumoProfissional">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Figura principal: Exibir imagem de perfil com legenda acessível -->
+        <figure class="hero">
+            <img src="https://placehold.co/200x200" alt="Foto de perfil de [Nome Completo]" id="imgPrincipal" loading="lazy" width="200" height="200">
+            <figcaption class="sr-only">Foto de perfil de [Nome Completo]</figcaption>
+        </figure>
+
+        <!-- Lead: Exibir biografia curta e idade -->
+        <p class="lead">[Biografia curta] — <span aria-hidden="true">|</span> <span class="age">[Idade]</span></p>
+
+        <p id="contato">
+            <a href="https://wa.me/00000000000" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+            · <a href="mailto:email@exemplo.com">email@exemplo.com</a>
+        </p>
     </header>
 
-    <main>
-        <section id="resumoProfissional">
-            <h2>Resumo Profissional</h2>
+    <main id="main" role="main">
+        <!-- Seção: Resumo Profissional — Descrever experiência e habilidades principais -->
+        <section id="resumoProfissional" aria-labelledby="resumo-title">
+            <h2 id="resumo-title">Resumo Profissional</h2>
             <p>[Resumo Profissional]</p>
         </section>
 
-        <section id="projetos">
-            <h2>Projetos</h2>
-            <section class="itemProjetos">
+        <!-- Seção: Projetos — Listar trabalhos, descrições e links -->
+        <section id="projetos" aria-labelledby="projetos-title">
+            <h2 id="projetos-title">Projetos</h2>
+            <article class="itemProjetos">
                 <h3>[Título do 1º Projeto]</h3>
-                <img src="https://placehold.co/250x100" alt="[Imagem do Projeto]">
+                <img src="https://placehold.co/250x100" alt="[Imagem do Projeto]" loading="lazy" width="250" height="100">
 
                 <p>[Descrição do Projeto]</p>
-                <p><a href="#">[Link do Projeto]</a></p>
-            </section>
+                <p><a href="#" target="_blank" rel="noopener noreferrer">[Link do Projeto]</a></p>
+            </article>
 
-            <section class="itemProjetos">
+            <article class="itemProjetos">
                 <h3>[Título do 2º Projeto]</h3>
-                <img src="https://placehold.co/250x100" alt="[Imagem do Projeto]">
+                <img src="https://placehold.co/250x100" alt="[Imagem do Projeto]" loading="lazy" width="250" height="100">
 
                 <p>[Descrição do Projeto]</p>
-                <p><a href="#">[Link do Projeto]</a></p>
-            </section>
+                <p><a href="#" target="_blank" rel="noopener noreferrer">[Link do Projeto]</a></p>
+            </article>
 
-            <section class="itemProjetos">
+            <article class="itemProjetos">
                 <h3>[Título do 3º Projeto]</h3>
-                <img src="https://placehold.co/250x100" alt="[Imagem do Projeto]">
+                <img src="https://placehold.co/250x100" alt="[Imagem do Projeto]" loading="lazy" width="250" height="100">
 
                 <p>[Descrição do Projeto]</p>
-                <p><a href="#">[Link do Projeto]</a></p>
-            </section>
+                <p><a href="#" target="_blank" rel="noopener noreferrer">[Link do Projeto]</a></p>
+            </article>
 
-            <section class="itemProjetos">
+            <article class="itemProjetos">
                 <h3>[Título do 4º Projeto]</h3>
-                <img src="https://placehold.co/250x100" alt="[Imagem do Projeto]">
+                <img src="https://placehold.co/250x100" alt="[Imagem do Projeto]" loading="lazy" width="250" height="100">
 
                 <p>[Descrição do Projeto]</p>
-                <p><a href="#">[Link do Projeto]</a></p>
-            </section>
+                <p><a href="#" target="_blank" rel="noopener noreferrer">[Link do Projeto]</a></p>
+            </article>
         </section>
     </main>
 
     <footer>
-        &copy; [Ano de Publicação] [Nome Completo]· Todos os direitos reservados · Para saber mais, me contate no <a href="#">LinkedIn</a>
+        <!-- Rodapé: Exibir direitos e link externo para LinkedIn -->
+        <p>&copy; <span id="ano">[Ano de Publicação]</span> [Nome Completo] · Todos os direitos reservados</p>
+        <p>Para saber mais, contate-me no <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
     </footer>
+
+    <script>
+        // Atualizar o ano automaticamente
+        (function(){
+            const y = new Date().getFullYear();
+            const span = document.getElementById('ano');
+            if(span) span.textContent = y;
+        })();
+    </script>
 </body>
 </html>
