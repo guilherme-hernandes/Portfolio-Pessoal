@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    font-size: 100%;
+    margin: 1.5rem;
+    line-height: 2rem;
+}
+
+header, main, footer {
+    max-width: 1100px;
+    margin: 2rem auto;
+}
+
+header, footer {
+    text-align: center;
+}
+
+h2, section > p {
+    margin-bottom: 1.5rem;
+}
+
+h1, h2, a {
+    color: #2e8196;
+}
+
+a {
+    font-weight: bold;
+}
+
+#imgPrincipal {
+    height: 200px;
+    width: 200px;
+}
+
+#projetos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+#projetos h2 {
+    grid-column: 1 / -1;
+}
+
+.itemProjetos {
+    text-align: center;
+}
+
+.itemProjetos img {
+    max-width: 100%;
+    height: auto;
+}
+
+header img {
+    border: 3px solid #2e8196;
+    border-radius: 10% 50% 10% 50%;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 175%;
+    }
+
+    #projetos img {
+        display: none;
+    }
+
+    #projetos {
+        grid-template-columns: 1fr;
+    }
+}
