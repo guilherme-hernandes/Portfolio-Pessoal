@@ -2,12 +2,12 @@
 <html lang="pt-br">
 <!--
         Arquivo: index.html
-        Finalidade: Portfólio pessoal
-        Notas: 
-            - Descrever propósito do site e informações de contato
+        Finalidade: apresentar o portfólio pessoal
+        Notas:
+            - Descrever o propósito do site e as informações de contato
             - Incluir navegação acessível (aria-label)
-            - Organizar seções: Resumo Profissional, Projetos, Contato
-            - Atualizar o ano automaticamente via script
+            - Organizar as seções: Resumo Profissional, Projetos, Contato
+            - Atualizar o ano automaticamente via script externo
 -->
 <head>
     <meta charset="UTF-8">
@@ -23,7 +23,7 @@
     <!-- Adicionar link de pular conteúdo para acessibilidade -->
     <a class="skip-link" href="#main">Pular para o conteúdo</a>
 
-    <!-- Cabeçalho: Exibir nome, foto e links de navegação -->
+    <!-- Cabeçalho: exibir nome, foto e links de navegação -->
     <header>
         <div class="container header-top">
             <h1>[Nome Completo]</h1>
@@ -36,13 +36,13 @@
             </nav>
         </div>
 
-        <!-- Figura Principal: Exibir imagem de perfil com legenda acessível -->
+        <!-- Figura principal: exibir imagem de perfil com legenda acessível -->
         <figure class="hero">
             <img src="https://placehold.co/200x200" alt="Foto de perfil de [Nome Completo]" id="imgPrincipal" loading="lazy" width="200" height="200">
             <figcaption class="sr-only">Foto de perfil de [Nome Completo]</figcaption>
         </figure>
 
-        <!-- Lead: Exibir biografia curta e idade -->
+        <!-- Lead: exibir biografia curta e idade -->
         <p class="lead">[Biografia curta] — <span aria-hidden="true">|</span> <span class="age">[Idade]</span></p>
 
         <p id="contato">
@@ -96,18 +96,11 @@
     </main>
 
     <footer>
-        <!-- Rodapé: Exibir direitos e link externo para LinkedIn -->
+        <!-- Rodapé: exibir direitos e link externo para LinkedIn -->
         <p>&copy; <span id="ano">[Ano de Publicação]</span> [Nome Completo] · Todos os direitos reservados</p>
         <p>Para saber mais, contate-me no <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
     </footer>
 
-    <script>
-        // Atualizar o ano automaticamente
-        (function(){
-            const y = new Date().getFullYear();
-            const span = document.getElementById('ano');
-            if(span) span.textContent = y;
-        })();
-    </script>
+    <script src="js/main.js" defer></script>
 </body>
 </html>
