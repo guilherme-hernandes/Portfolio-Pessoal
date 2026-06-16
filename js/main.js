@@ -8,8 +8,6 @@
     - Habilitar rolagem suave para âncoras internas (respeitar preferências do usuário)
     - Melhorar o comportamento do link "Pular para o conteúdo"
     - Permitir ativar cartões de projeto por teclado (Enter / Space)
-
-  Padrão de comentários: usar o infinitivo para verbos e manter estilo conciso.
 */
 
 (function () {
