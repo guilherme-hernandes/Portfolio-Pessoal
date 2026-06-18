@@ -3,24 +3,44 @@ Projeto de portfólio pessoal de Guilherme Hernandes
 
 ---
 
-## Visão Geral
-Site estático construído com HTML, CSS e JavaScript para apresentar informações pessoais, projetos e contato
+## 🌐 Visão Geral
+Site estático construído com HTML5, CSS3 e JavaScript para apresentar informações pessoais, projetos e contato
 
 ---
 
-## Estrutura do Repositório
+## 📄 Estrutura do Repositório
 | Arquivo | Funcionalidade |
 | --- | --- |
-| `html/index.html` | Página Principal |
-| `css/main.css` | Estilos do Projeto |
-| `js/main.js` | Comportamentos e Melhorias de Acessibilidade |
+| `index.html` | Página Principal do Projeto |
+| `main.css` | Estilos do Projeto |
+| `main.js` | Scripts e Melhorias de Interatividade |
+| `README.md` | Documentação do Projeto |
+| `.gitignore` | Configurações de Arquivos Ignorados pelo Git |
 
 ---
 
-## Contribuição
-Correções e melhorias são bem-vindas! Abrir issue ou enviar pull request com alterações
+## 🚀 Recursos
+- Layout responsivo para diferentes tamanhos de tela
+- Seção de apresentação com texto pessoal e objetivos
+- Galeria ou área de projetos para exibir trabalhos
+- Seção de contato para facilitar comunicação
+- Navegação simples e design limpo
 
 ---
 
-## Autor
-Guilherme Hernandes
+## 🛠️ Tecnologias Utilizadas
+```
+- HTML5
+- CSS3
+- JavaScript
+```
+
+---
+
+## 🔗 Contato
+Para discutir melhorias ou projetos, entre em contato
+
+---
+
+## 🤝 Contribuição
+Correções e melhorias são bem-vindas! Abra uma issue ou envie um pull request com alterações
