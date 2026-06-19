@@ -1,15 +1,3 @@
-/*
-  Arquivo: js/main.js
-  Finalidade: melhorar a usabilidade e acessibilidade do portfólio
-  Notas:
-    - Atualizar o ano no rodapé (elemento com id="ano")
-    - Calcular a idade automaticamente a partir de um atributo data (opcional)
-      - Definir `data-birth="YYYY-MM-DD"` no elemento `.age` ou no `<body>`
-    - Habilitar rolagem suave para âncoras internas (respeitar preferências do usuário)
-    - Melhorar o comportamento do link "Pular para o conteúdo"
-    - Permitir ativar cartões de projeto por teclado (Enter / Space)
-*/
-
 (function () {
   'use strict';
 

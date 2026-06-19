@@ -6,17 +6,6 @@
     --container-max: 1100px;
 }
 
-/*
-  Arquivo: css/main.css
-  Finalidade: estilizar o portfólio pessoal
-  Notas:
-    - Definir variáveis de tema
-    - Normalizar box-sizing
-    - Definir tipografia, layout e responsividade
-    - Estilizar cabeçalho, seção de projetos e rodapé
-    - Definir estilos de foco para acessibilidade
-*/
-
 *{box-sizing:border-box}
 
 html,body{height:100%}
