@@ -30,3 +30,6 @@ build/
 # Cobertura / histórico
 coverage/
 .history/
+
+# Pasta de arquivos de imagem
+imgs/
