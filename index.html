@@ -1,24 +1,34 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio Pessoal — Projetos e Resumo Profissional de Guilherme dos Santos Hernandes">
+    <meta name="description" content="Portfólio pessoal de Guilherme dos Santos Hernandes — estagiário de TI, projetos de desenvolvimento web e contato profissional">
+    <meta name="author" content="Guilherme dos Santos Hernandes">
+    <meta name="theme-color" content="#2e8196">
+
+    <!-- Definir tags Open Graph para compartilhamento em redes sociais -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Portfólio Pessoal | Guilherme Hernandes">
+    <meta property="og:description" content="Estagiário de TI — projetos de desenvolvimento web e contato profissional">
+    <meta property="og:image" content="imgs/perfil.jpg">
+    <meta property="og:locale" content="pt_BR">
+
     <link rel="icon" href="imgs/Ícone.png" type="image/png">
     <link rel="stylesheet" href="main.css">
     <title>Portfólio Pessoal | Guilherme Hernandes</title>
 </head>
 
 <body>
-    <!-- Adicionar link de pular conteúdo para acessibilidade -->
-    <a class="skip-link" href="#main">Pular para o Conteúdo</a>
+    <!-- Adicionar link de pular conteúdo para acessibilidade via teclado e leitor de tela -->
+    <a class="skip-link" href="#main">Pular para o conteúdo</a>
 
-    <!-- Cabeçalho: exibir nome, foto e links de navegação -->
+    <!-- Exibir nome, foto de perfil e navegação principal -->
     <header>
         <div class="container header-top">
             <h1>Guilherme dos Santos Hernandes</h1>
-            <nav aria-label="Navegação Principal">
+            <nav aria-label="Navegação principal">
                 <ul>
                     <li><a href="#resumoProfissional">Resumo Profissional</a></li>
                     <li><a href="#projetos">Projetos</a></li>
@@ -27,67 +37,64 @@
             </nav>
         </div>
 
-        <!-- Figura principal: exibir imagem de perfil com legenda acessível -->
+        <!-- Exibir imagem de perfil com texto alternativo descritivo -->
         <figure class="hero">
-            <img src="imgs/Guilherme dos Santos Hernandes.jpg" alt="Foto de Perfil de Guilherme dos Santos Hernandes" id="imgPrincipal" loading="lazy" width="200" height="200">
-            <figcaption class="sr-only">Foto de Perfil de Guilherme dos Santos Hernandes</figcaption>
+            <img src="imgs/Guilherme dos Santos Hernandes.jpg" alt="Foto de perfil de Guilherme dos Santos Hernandes" id="imgPrincipal" loading="lazy" width="200" height="200">
         </figure>
 
-        <!-- Lead: exibir biografia curta e idade -->
+        <!-- Exibir biografia curta e idade -->
         <p class="lead">Estagiário de TI @ Vertus Informática<span aria-hidden="true"> | </span><span class="age">19 anos</span></p>
 
         <p id="contato">
-            <a href="https://wa.me/+5513996623257" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-            · <a href="mailto:gui.hernandes2006@gmail.com">E-mail</a>
+            <a href="https://wa.me/5513996623257" target="_blank" rel="noopener noreferrer">WhatsApp</a> · <a href="mailto:gui.hernandes2006@gmail.com">E-mail</a>
         </p>
     </header>
 
     <main id="main" role="main">
-        <!-- Seção: resumo profissional — descrever experiência e habilidades principais -->
+        <!-- Descrever resumo profissional -->
         <section id="resumoProfissional" aria-labelledby="resumo-title">
             <h2 id="resumo-title">Resumo Profissional</h2>
-            <p>[Resumo Profissional]</p>
+            <p>
+                Estudante e estagiário de TI na Vertus Informática, com interesse em desenvolvimento web e boas práticas de organização e produtividade. Venho me aprofundando em HTML, CSS e JavaScript, além de fluxos de trabalho colaborativos com Git e GitHub, sempre buscando escrever código limpo, acessível e fácil de manter. Gosto de transformar processos do dia a dia em sistemas simples e bem estruturados — uma forma de pensar que aplico tanto nos meus estudos quanto nos meus projetos pessoais
+            </p>
         </section>
 
-        <!-- Seção: projetos — listar trabalhos, descrições e links -->
+        <!-- Listar projetos (exemplos — substituir pelos projetos reais quando disponíveis) -->
         <section id="projetos" aria-labelledby="projetos-title">
             <h2 id="projetos-title">Projetos</h2>
-            <article class="itemProjetos">
-                <h3>[Título do 1º Projeto]</h3>
-                <img src="https://placehold.co/250x100" alt="[Imagem do Projeto]" loading="lazy" width="250" height="100">
 
-                <p>[Descrição do Projeto]</p>
-                <p><a href="#" target="_blank" rel="noopener noreferrer">[Link do Projeto]</a></p>
+            <article class="itemProjetos">
+                <h3>Lista de Tarefas</h3>
+                <img src="https://placehold.co/250x100?text=Lista+de+Tarefas" alt="Captura de tela do projeto Lista de Tarefas" loading="lazy" width="250" height="100">
+                <p>Aplicação simples para criar, concluir e remover tarefas, com dados salvos no navegador usando localStorage</p>
+                <p><a href="#" target="_blank" rel="noopener noreferrer">Ver projeto</a></p>
             </article>
 
             <article class="itemProjetos">
-                <h3>[Título do 2º Projeto]</h3>
-                <img src="https://placehold.co/250x100" alt="[Imagem do Projeto]" loading="lazy" width="250" height="100">
-
-                <p>[Descrição do Projeto]</p>
-                <p><a href="#" target="_blank" rel="noopener noreferrer">[Link do Projeto]</a></p>
+                <h3>Calculadora de IMC</h3>
+                <img src="https://placehold.co/250x100?text=Calculadora+de+IMC" alt="Captura de tela do projeto Calculadora de IMC" loading="lazy" width="250" height="100">
+                <p>Calculadora de Índice de Massa Corporal com validação de formulário e mensagens de resultado acessíveis</p>
+                <p><a href="#" target="_blank" rel="noopener noreferrer">Ver projeto</a></p>
             </article>
 
             <article class="itemProjetos">
-                <h3>[Título do 3º Projeto]</h3>
-                <img src="https://placehold.co/250x100" alt="[Imagem do Projeto]" loading="lazy" width="250" height="100">
-
-                <p>[Descrição do Projeto]</p>
-                <p><a href="#" target="_blank" rel="noopener noreferrer">[Link do Projeto]</a></p>
+                <h3>Clone de Landing Page</h3>
+                <img src="https://placehold.co/250x100?text=Landing+Page" alt="Captura de tela do projeto Clone de Landing Page" loading="lazy" width="250" height="100">
+                <p>Reprodução de uma landing page responsiva, com foco em fidelidade de layout e organização do CSS</p>
+                <p><a href="#" target="_blank" rel="noopener noreferrer">Ver projeto</a></p>
             </article>
 
             <article class="itemProjetos">
-                <h3>[Título do 4º Projeto]</h3>
-                <img src="https://placehold.co/250x100" alt="[Imagem do Projeto]" loading="lazy" width="250" height="100">
-
-                <p>[Descrição do Projeto]</p>
-                <p><a href="#" target="_blank" rel="noopener noreferrer">[Link do Projeto]</a></p>
+                <h3>Consulta de CEP</h3>
+                <img src="https://placehold.co/250x100?text=Consulta+de+CEP" alt="Captura de tela do projeto Consulta de CEP" loading="lazy" width="250" height="100">
+                <p>Consumo da API ViaCEP para busca de endereços, exibindo os resultados em uma interface simples</p>
+                <p><a href="#" target="_blank" rel="noopener noreferrer">Ver projeto</a></p>
             </article>
         </section>
     </main>
 
     <footer>
-        <!-- Rodapé: exibir direitos e link externo para LinkedIn -->
+        <!-- Exibir direitos autorais e link externo para LinkedIn -->
         <p>&copy; <span id="ano">2026</span> Guilherme dos Santos Hernandes · Todos os direitos reservados</p>
         <p>Para saber mais, contate-me no <a href="https://www.linkedin.com/in/guilhermehernandes/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
     </footer>

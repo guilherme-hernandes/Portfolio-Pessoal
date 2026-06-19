@@ -2,7 +2,7 @@
 .DS_Store
 Thumbs.db
 
-# Dependências (se usar ferramentas de build)
+# Dependências (caso utilizar ferramentas de build)
 node_modules/
 
 # Logs
@@ -23,13 +23,10 @@ build/
 *.sublime-workspace
 *.swp
 
-# Ambiente
+# Variáveis de ambiente
 .env
 .env.*
 
-# Cobertura / histórico
+# Cobertura de testes / histórico
 coverage/
 .history/
-
-# Pasta de arquivos de imagem
-imgs/

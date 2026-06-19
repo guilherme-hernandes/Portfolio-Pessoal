@@ -30,7 +30,7 @@
     const ageEl = document.querySelector('.age');
     if (!ageEl) return;
 
-    // Procura data no próprio elemento ou no body (flexibilidade)
+    // Buscar data no próprio elemento ou no body (flexibilidade)
     const iso = ageEl.dataset.birth || ageEl.dataset.birthdate || document.body.dataset.birth || document.body.dataset.birthdate;
     if (!iso) return;
 

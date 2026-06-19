@@ -1,21 +1,22 @@
-# 👤 Portfólio Pessoal - Guilherme Hernandes
-Site estático construído com HTML5, CSS3 e JavaScript para apresentar informações pessoais, projetos e contato
+# 👤 Portfólio Pessoal — Guilherme Hernandes
+Site estático construído com HTML5, CSS3 e JavaScript puro para apresentar informações pessoais, projetos e contato
 
 ## 📄 Estrutura do Repositório
-| Arquivo | Funcionalidade |
-| --- | --- |
-| `index.html` | Página principal |
-| `main.css` | Estilos |
-| `main.js` | Scripts e melhorias de interatividade |
-| `README.md` | Documentação |
-| `.gitignore` | Configurações de arquivos ignorados pelo Git |
+| Arquivo      | Função                                                                   |
+| ------------ | ------------------------------------------------------------------------ |
+| `index.html` | Página principal (estrutura e conteúdo)                                  |
+| `main.css`   | Estilos, tema visual e responsividade                                    |
+| `main.js`    | Interatividade: idade dinâmica, scroll suave, acessibilidade por teclado |
+| `README.md`  | Documentação do projeto                                                  |
+| `.gitignore` | Arquivos e pastas ignorados pelo Git                                     |
 
 ## 🚀 Recursos
 - Layout responsivo para diferentes tamanhos de tela
-- Seção de apresentação com texto pessoal e objetivos
-- Galeria ou área de projetos para exibir trabalhos
-- Seção de contato para facilitar comunicação
-- Navegação simples e design limpo
+- Seção de resumo profissional
+- Galeria de projetos com imagens, descrição e link
+- Seção de contato (WhatsApp e e-mail)
+- Navegação com rolagem suave e link de "pular para o conteúdo"
+- Cuidados de acessibilidade: foco visível, `aria-label`, suporte a `prefers-reduced-motion`
 
 ## 🛠️ Tecnologias Utilizadas
 ```
@@ -23,11 +24,12 @@ HTML5 · CSS3 · JavaScript
 ```
 
 ## 🔗 Contato
-Para discutir melhorias ou projetos, entre em [contato][1]
+Para discutir melhorias ou projetos, entrar em [contato][1]
 
 ## 🤝 Contribuição
-Correções e melhorias são bem-vindas! Abra uma issue ou envie um pull request com alterações
+Correções e melhorias são bem-vindas! Abrir uma *issue* ou enviar um *pull request* com as alterações
 
-
+## 📜 Licença
+Este projeto é de uso pessoal. Sinta-se livre para usá-lo como referência
 
 [1]: mailto:gui.hernandes2006@gmail.com
